@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="خدمات عزل الأسطح وكشف تسربات المياه وحل ارتفاع فاتورة المياه في الرياض.">
+  <title>خدمات العزل وكشف التسربات | الرياض</title>
+  <style>
+    :root{
+      --navy:#071f35;
+      --blue:#0b6f9d;
+      --cyan:#19c4c9;
+      --gold:#f4a62a;
+      --paper:#ffffff;
+      --ink:#173149;
+      --muted:#6b7c8c;
+      --line:#dce8ef;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--ink);
+      font-family:Tahoma,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 12% 12%,#29c7cc33 0 12%,transparent 30%),
+        radial-gradient(circle at 90% 80%,#f4a62a2b 0 10%,transparent 28%),
+        linear-gradient(135deg,#061c31,#0a4667 58%,#06283e);
+    }
+    a{text-decoration:none;color:inherit}
+    .page{width:min(760px,calc(100% - 24px));margin:24px auto}
+    .flyer{
+      overflow:hidden;
+      background:var(--paper);
+      border-radius:30px;
+      box-shadow:0 24px 70px #00111f80;
+      border:1px solid #ffffff70;
+    }
+    .hero{
+      position:relative;
+      padding:34px 26px 30px;
+      text-align:center;
+      color:#fff;
+      background:
+        linear-gradient(135deg,#08233b 0%,#0b5e7d 58%,#0db4bb 100%);
+    }
+    .hero:after{
+      content:"";
+      position:absolute;
+      width:220px;height:220px;
+      border:1px solid #ffffff30;
+      border-radius:50%;
+      left:-80px;bottom:-120px;
+      box-shadow:0 0 0 28px #ffffff0b,0 0 0 56px #ffffff08;
+    }
+    .badge{
+      position:relative;z-index:1;
+      display:inline-flex;align-items:center;gap:8px;
+      padding:7px 14px;border:1px solid #ffffff42;border-radius:99px;
+      background:#ffffff12;color:#cfffff;font-size:13px;font-weight:800;
+    }
+    .badge i{width:8px;height:8px;border-radius:50%;background:var(--gold);display:block}
+    h1{position:relative;z-index:1;margin:18px auto 10px;max-width:600px;font-size:clamp(29px,6vw,51px);line-height:1.25}
+    .hero p{position:relative;z-index:1;margin:0 auto;color:#d9f6f6;font-size:17px;max-width:550px}
+    .city{margin-top:16px;color:#fff;font-weight:900;font-size:18px}
+    .content{padding:28px 26px 24px}
+    .section-title{text-align:center;margin:0 0 18px;color:var(--navy);font-size:23px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .service{
+      display:flex;align-items:center;gap:11px;
+      min-height:69px;padding:12px;
+      border:1px solid var(--line);border-radius:16px;
+      background:linear-gradient(135deg,#fff,#f5fbfc);
+    }
+    .icon{
+      flex:0 0 39px;width:39px;height:39px;
+      display:grid;place-items:center;border-radius:12px;
+      background:#e6f8f8;color:var(--blue);font-size:21px;font-weight:900;
+    }
+    .service strong{display:block;font-size:15px;color:var(--navy)}
+    .service span{display:block;font-size:12px;color:var(--muted);line-height:1.5}
+    .features{
+      display:flex;justify-content:center;flex-wrap:wrap;gap:9px;
+      margin:22px 0 25px;
+    }
+    .feature{
+      padding:7px 12px;border-radius:99px;
+      background:#fff5df;color:#85540b;font-size:13px;font-weight:800;
+      border:1px solid #f7d99a;
+    }
+    .contact{
+      padding:23px 18px;text-align:center;border-radius:21px;
+      background:linear-gradient(135deg,#f0fbfc,#fff8e9);
+      border:1px solid #d7edef;
+    }
+    .contact-label{font-size:14px;color:var(--muted);font-weight:800}
+    .phone{display:block;direction:ltr;color:var(--navy);font-size:clamp(27px,6vw,39px);font-weight:900;letter-spacing:1px;margin:2px 0 15px}
+    .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      min-width:170px;padding:12px 18px;border-radius:12px;
+      font-weight:900;font-size:15px;transition:transform .2s,box-shadow .2s;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #082c4630}
+    .call{background:var(--navy);color:#fff}
+    .whatsapp{background:#1cae63;color:#fff}
+    .note{text-align:center;color:var(--muted);font-size:12px;margin:18px 0 0}
+    footer{
+      padding:17px 20px;text-align:center;
+      background:#f7fafb;border-top:1px solid var(--line);
+      color:var(--muted);font-size:12px;
+    }
+    .designer{margin-bottom:6px;color:var(--navy);font-weight:800}
+    .designer a{color:var(--blue);text-decoration:underline}
+    @media(max-width:520px){
+      .page{width:min(100% - 14px,760px);margin:7px auto}
+      .flyer{border-radius:22px}
+      .hero{padding:27px 17px 25px}
+      .content{padding:23px 14px 19px}
+      .services{gap:8px}
+      .service{padding:10px 8px;min-height:77px;gap:8px}
+      .icon{flex-basis:34px;width:34px;height:34px;font-size:18px}
+      .service strong{font-size:13px}
+      .service span{font-size:11px}
+      .btn{width:100%}
+    }
+  </style>
+  <!-- TikTok Pixel -->
+  <script>
+    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement("script");s.type="text/javascript";s.async=!0;s.src=r+"?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a)};ttq.load("DACJAERC77U47UVQFLD");ttq.page()}(window,document,"ttq");
+  </script>
+</head>
+<body>
+  <div class="page">
+    <div class="flyer">
+      <header class="hero">
+        <div class="badge"><i></i> خدمة موثوقة • استجابة سريعة</div>
+        <h1>عزل الأسطح وكشف تسربات المياه</h1>
+        <p>حلول احترافية تحمي منزلك وتساعدك على خفض استهلاك المياه والفاتورة.</p>
+        <div class="city">📍 الرياض</div>
+      </header>
+      <main class="content">
+        <h2 class="section-title">خدماتنا</h2>
+        <div class="services">
+          <div class="service"><div class="icon">⌂</div><div><strong>عزل الأسطح</strong><span>عزل مائي وحراري لحماية المبنى</span></div></div>
+          <div class="service"><div class="icon">⌁</div><div><strong>كشف التسربات</strong><span>تحديد المصدر بدقة دون تكسير عشوائي</span></div></div>
+          <div class="service"><div class="icon">◉</div><div><strong>الكاميرا الحرارية</strong><span>فحص الجدران والمواسير بأجهزة حديثة</span></div></div>
+          <div class="service"><div class="icon">▣</div><div><strong>فحص الحمامات والأرضيات</strong><span>كشف تسربات العزل والرطوبة المخفية</span></div></div>
+          <div class="service"><div class="icon">↘</div><div><strong>حل ارتفاع الفاتورة</strong><span>تشخيص التسرب غير الظاهر وتقليل الهدر</span></div></div>
+          <div class="service"><div class="icon">✓</div><div><strong>إصلاح ومعالجة</strong><span>حل مناسب بعد فحص واضح ومفصل</span></div></div>
+        </div>
+        <div class="features">
+          <span class="feature">✓ فحص دقيق</span>
+          <span class="feature">✓ أجهزة حديثة</span>
+          <span class="feature">✓ أسعار واضحة</span>
+          <span class="feature">✓ مواعيد مرنة</span>
+        </div>
+        <section class="contact">
+          <div class="contact-label">للحجز والاستفسار اتصل الآن</div>
+          <a class="phone" href="tel:0531461646">0531461646</a>
+          <div class="actions">
+            <a class="btn call" href="tel:0531461646">☎ اتصال مباشر</a>
+            <a class="btn whatsapp" href="https://wa.me/966531461646" target="_blank" rel="noopener">◉ واتساب</a>
+          </div>
+          <p class="note">أرسل موقعك ووصف المشكلة لنرتب لك موعد الفحص.</p>
+        </section>
+      </main>
+      <footer>
+        <div class="designer">تم التصميم بواسطة م. نجوى إبراهيم — <a href="https://wa.me/201029095046" target="_blank" rel="noopener">واتساب المصممة +20 10 29095046</a></div>
+        <div>© 2026 جميع الحقوق محفوظة</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
